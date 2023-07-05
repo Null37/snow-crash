@@ -1,1 +1,28 @@
 -rwsr-sr-x  1 flag04  level04  152 Mar  5  2016 level04.pl
+
+
+that the code in level04.pl 
+```
+#!/usr/bin/perl
+# localhost:4747
+
+use CGI qw{param};
+
+# Set the content type of the response to text/html
+print "Content-type: text/html\n\n";
+
+# Define the subroutine x
+sub x {
+  $y = $_[0];
+  # Execute the command "echo $y" and capture the output
+  print `echo $y 2>&1`;
+}
+
+# Call the subroutine x with the value of the parameter "x" from the request
+x(param("x"));
+```
+
+after see open port 
+
+ss -a
+[![ss](https://i.postimg.cc/T3FXcMVF/ss-command.png)](https://postimg.cc/753cxRQn)
