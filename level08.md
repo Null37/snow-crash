@@ -2,3 +2,5 @@
 
 
 ln -s $PWD/token /tmp/tt
+token: 
+flag08: 
