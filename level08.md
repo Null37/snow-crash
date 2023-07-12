@@ -4,9 +4,9 @@
 ln -s $PWD/token /tmp/tt
 
 
-token: 
+token: quif5eloekouj29ke0vouxean that password for falg08
 
 
 
 
-flag08: 
+flag08: 25749xKZ8L7DkSCwJkT9dyv6f
