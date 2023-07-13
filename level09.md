@@ -28,8 +28,7 @@ int main(int argc, char** argv) {
    }
    line[i] = '\0';
    printf("%s", line);
-   // Close the file
-    fclose(file);
+fclose(file);
 
     return 0;
 } 
