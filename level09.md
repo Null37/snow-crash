@@ -2,6 +2,10 @@
 
 putchar 
 
+
+
+
+
 ![BinaryNinja](https://cdn.discordapp.com/attachments/691741851648262195/1129130630945443922/image.png)
 
 
@@ -35,4 +39,8 @@ fclose(file);
 ```
 
 token : f3iji1ju5yuevaus41q1afiuq
+
+
+
+
 flag 09: s5cAJpM8ev6XHw998pRWG728z
