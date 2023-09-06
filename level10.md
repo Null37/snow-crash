@@ -17,7 +17,7 @@ after reading the code we can understand that the elf file read a file that the 
 
 ![send](https://cdn.discordapp.com/attachments/1015186220227231825/1149020868383604806/image.png)
 
-![r](https://cdn.discordapp.com/attachments/1015186220227231825/1149020868383604806/image.png)
+![r](https://cdn.discordapp.com/attachments/1015186220227231825/1149020867939016724/image.png)
 
 in code we have an condition : 
 08048746      var_1060 = argv[1];
