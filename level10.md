@@ -12,7 +12,13 @@ after run binary ninja to reverse the elf we got:
 ![main2](https://cdn.discordapp.com/attachments/1015186220227231825/1148990437391077406/image.png)
 
 
-after reading the code we can understand that the elf file opens a connection and 
+after reading the code we can understand that the elf file read a file that the user "level10" has access to and sent it to port 6969 as you see below: 
+
+
+![send](https://cdn.discordapp.com/attachments/1015186220227231825/1149020868383604806/image.png)
+
+![r](https://cdn.discordapp.com/attachments/1015186220227231825/1149020868383604806/image.png)
+
 in code we have an condition : 
 08048746      var_1060 = argv[1];
 08048750      int32_t eax_29;
