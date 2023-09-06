@@ -10,3 +10,14 @@ after run binary ninja to reverse the elf we got:
 
 ![main](https://cdn.discordapp.com/attachments/1015186220227231825/1148990230909689946/image.png)
 ![main2](https://cdn.discordapp.com/attachments/1015186220227231825/1148990437391077406/image.png)
+
+
+after reading the code we can understand that the elf file opens a connection and 
+in code we have an condition : 
+08048746      var_1060 = argv[1];
+08048750      int32_t eax_29;
+08048750      if (access(var_1060, 4) != 0)
+0804874e      {
+0804894d          var_1060 = "You don't have access to %s\n";
+08048950          eax_29 = printf("You don't have access to %s\n", eax_5);
+08048950      }
