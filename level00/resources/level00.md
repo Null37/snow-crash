@@ -80,12 +80,15 @@ flag12:x:3012:3012::/home/flag/flag12:/bin/bash
 flag13:x:3013:3013::/home/flag/flag13:/bin/bash
 flag14:x:3014:3014::/home/flag/flag14:/bin/bash
 ```
+etc/group
+![etc_group](https://cdn.discordapp.com/attachments/1164485225875783701/1164518732186533889/image.png?ex=65438195&is=65310c95&hm=e9367706a4cf5826403fb83c42f54dc2ebcfc9e031646bfc1dd7ece892db64bf&)
 
 we know now the road to flag01 ;)
 
 our target now is flog00 as subject say
 
 we alaso have loock to /var dir if any mails/logs/websites/backups
+
 ![var](https://cdn.discordapp.com/attachments/691741851648262195/1163412552911437986/image.png?ex=653f7b5f&is=652d065f&hm=be5027a7fb9efd78153f82d170187678a5705bebf2d6be6e591be7f906a14553&)
 
 And now we also know the other paths to different levels.
