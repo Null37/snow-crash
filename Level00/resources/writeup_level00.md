@@ -18,7 +18,9 @@ uid=2000(level00) gid=2000(level00) groups=2000(level00),100(users)
 
 - what  is this machine:
 from uname and lscpu we know that ubuntu 32bit with old(End of Lif) virsion ubuntu : ubuntu 12.04 precise pangolinI t was officially released on April 26, 2012
-![uname/lscpu]()
+
+![uname/lscpu](https://cdn.discordapp.com/attachments/1164485225875783701/1164485411192721488/image.png?ex=6543628d&is=6530ed8d&hm=578e0fbcad7a73dac3e72469b3d6387075dd77f642d34821a096ff573c936696&)
+
 source: https://askubuntu.com/questions/444394/what-is-the-meaning-of-i686-in-ubuntu
 
 let list all users in /etc/passwd
@@ -83,7 +85,7 @@ we know now the road to flag01 ;)
 
 our target now is flog00 as subject say
 
-we alaso have loock to /var dir if any mails/logs/websites 
+we alaso have loock to /var dir if any mails/logs/websites/backups
 ![var](https://cdn.discordapp.com/attachments/691741851648262195/1163412552911437986/image.png?ex=653f7b5f&is=652d065f&hm=be5027a7fb9efd78153f82d170187678a5705bebf2d6be6e591be7f906a14553&)
 
 And now we also know the other paths to different levels.
