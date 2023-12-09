@@ -17,7 +17,7 @@ uid=2000(level00) gid=2000(level00) groups=2000(level00),100(users)
 
 
 - what  is this machine:
-from uname and lscpu we know that ubuntu 32bit with old(End of Lif) virsion ubuntu : ubuntu 12.04 precise pangolinI t was officially released on April 26, 2012
+from uname and lscpu we know that ubuntu 32bit with old(End of Life) virsion ubuntu : ubuntu 12.04 precise pangolinI t was officially released on April 26, 2012
 
 ![uname/lscpu](https://cdn.discordapp.com/attachments/1164485225875783701/1164485411192721488/image.png?ex=6543628d&is=6530ed8d&hm=578e0fbcad7a73dac3e72469b3d6387075dd77f642d34821a096ff573c936696&)
 
