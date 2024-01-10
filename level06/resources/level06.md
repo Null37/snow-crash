@@ -1,10 +1,8 @@
-# Writeup level05
+# Writeup level06
 
-
-that we here 2 files one php code and second is executable file 
+In this level, we can see two files called level06 and level06.php. Let's check their permissions.
 
 ![level06_ls.png](https://cdn.discordapp.com/attachments/1164485225875783701/1175099598180733058/image.png?ex=6569ffc8&is=65578ac8&hm=654726dd3567ae6c1f47ab305c9df10639ed7db4816ef7d1b05f8b4267d3a010&)
-
 
 - `d`: Denotes a directory.
 - `r-xr-x---`: Represents the file permissions for the owner, group, and others respectively. In this case:
@@ -35,16 +33,18 @@ other::---
 - `mask::r-x`: The mask defines the maximum permissions allowed by the ACL entries. In this case, it's set to read and execute (r-x).
 - `other::---`: Others have no permissions (---).
 
-so because the mask we can write in to the file.
-
 source:
 - [https://www.redhat.com/sysadmin/linux-access-control-lists](https://www.redhat.com/sysadmin/linux-access-control-lists)
 - [https://linux-training.be/storage/ch03.html#:~:text=The%20acl%20mask%20defines%20the,the%20%2D%2Dno%2Dmask%20switch](https://linux-training.be/storage/ch03.html#:~:text=The%20acl%20mask%20defines%20the,the%20%2D%2Dno%2Dmask%20switch)
 
-After saw binaryninija result and execute level06 we can see that level06 execute with php the level06.php and that mean to exploit level06 we need to exploit level06.php
+After using Binaryninja to determine the behavior of level06 binary. We can see that it uses php to execute level06.php.
 
-Let explain level06.php:
+![](https://cdn.discordapp.com/attachments/1021356105869316157/1194592503467364402/image.png?ex=65b0e9f7&is=659e74f7&hm=c13b3c508954ff441f980e60c56d57b2d62b4552d8dc1d0af22b0b06617a8bf4&)
 
+Let's understand level06.php:
+
+
+```php
 #!/usr/bin/php
 <?php
 function y($m) 
@@ -64,9 +64,10 @@ function x($y, $z)
 $r = x($argv[1], $argv[2]); 
 print $r;
 ?>
+```
 
-first x($argv[1], $argv[2]) secript take  from command-line argument argv[1] and argv[2] to fucntion x that function get file content from first argument(argv[1])
-and return cotent of this file to a(variable) after that $a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a);
+First, the x() function take two arguments in this case argv[1] and argv[2]. Right after, it gets the file content of first argument(argv[1])
+and perform multiple preg_replace operations on it.
 
 ## preg_replace
 The `preg_replace` function, as described in the [PHP documentation](https://www.php.net/manual/en/function.preg-replace.php) Takes the first argument as the pattern, replaces occurrences of this pattern in the subject string (which is taken from the third argument), and substitutes them with the content provided in the second argument.
@@ -116,4 +117,6 @@ The exploitation is attempted using a command similar to the following:
 ![EXPLOIT](https://cdn.discordapp.com/attachments/1164485225875783701/1183034385281335406/image.png?ex=6586dda1&is=657468a1&hm=565206d27b9c22ed17580217954789b5db11c5bd22ba29524d9c8db69b0f570c&)
 
 
-And that work so we can now replace ls with getflag and get that flag:
+And that work so we can now replace `ls` with `getflag`:
+
+![](https://cdn.discordapp.com/attachments/1021356105869316157/1194595925495140352/image.png?ex=65b0ed27&is=659e7827&hm=b4adb8d618d2f6188a0ba16b28ecad98266e13b25d5707f57d3672cebe2d3844&)
