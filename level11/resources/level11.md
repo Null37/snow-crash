@@ -45,7 +45,7 @@ while 1 do
 end
 ```
 
-We attempted to open port `5151`, but it was already bound. This indicates that the file is already running the program. This is the intended behavior of the program. To confirm, we used `telnet` to establish a connection
+We attempted to open port `5151`, but it was already in use. This indicates that the file is already running the program. This is the intended behavior of the program. To confirm, we used `telnet` to establish a connection
 
 ```
 telnet localhost 5151
